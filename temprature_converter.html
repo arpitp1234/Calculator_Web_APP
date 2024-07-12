@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="unit_converter.css">
+</head>
+<body>
+    <div class="container">
+      <div class="navbar" >
+        <p>
+         <div class="nav"><h2 style=" margin-left:5mm;margin-right:2mm;font-size: larger; font-weight:bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">CALCULATOR</h2></div>
+         <div class="nav"><h3><a href="./index.html" style="text-decoration: none; font-size: medium; font-weight:bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Home</a></h3> </div>
+         <div class="nav"><h3><a href="./unit_coverter.html" style="text-decoration:none; font-size: medium; font-weight:bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">UnitConverter</a></h3></div>
+         <div class="nav"><h3><a href="./temprature_converter.html" style="text-decoration:none; font-size: medium; font-weight:bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Temprature</a></h3></div>
+        </p>
+      </div>
+        <di id="calculatorbox">
+                 <br>
+                 <center><h1>TEMPRATURE</h1></center>
+                <div id="box1">
+                  <br><br>
+                  <center><h2>Input</h2></center>
+                  <div class="Frombox">
+                <center> <label for="Fromunit">From:</label>
+                <select name="Fromunit" id="Fromunit">
+                <option value="Fahreneit">Fahreneit</option>
+                <option value="Celsius">Celsius</option>
+                </select></center> 
+                </div>
+                <div  class="Frombox">
+                <center><input placeholder="Input"  id="frominput" class="inputs" type="number" style="font-size: large;"></center>
+                </div>
+                 </div>
+                <div id="box2">
+                  <br>
+                  <center><h2>Output</h2></center>
+                <div  class="Tobox">
+                 <center><label for="Tounit">To:</label>
+                <select name="Tounit" id="Tounit">
+                <option value="Fahreneit">Fahreneit</option>
+                <option value="Celsius">Celsius</option>
+                </select></center>
+                </div>
+                <div  class="Tobox">
+                  <center><input readonly placeholder="Output"  id="toinput" class="inputs" type="number" style="font-size: large;"></center>
+                </div>
+                </div>
+                <div id="box3">
+                  <center> 
+                  <!--  <button type="button"  class="btn" id="btn1">Reset</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                    <button type="button"  class="btn" id="btn2" onclick="CalculateLength()">Submit</button>
+                  </center>
+                </div>
+        </div>
+    </div>
+   <script src="temprature.js"></script>
+   
+</body>
+</html>
